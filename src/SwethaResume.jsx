@@ -51,7 +51,6 @@ const SwethaResume = () => {
 
   return (
     <div className="font-sans bg-gray-50 text-gray-800 relative">
-            {/* Scroll to Top Button */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
@@ -62,12 +61,10 @@ const SwethaResume = () => {
         </button>
       )}
 
-      {/* Header */}
       <header className="fixed w-full bg-white shadow-md z-50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <a href="#" className="text-2xl font-bold text-indigo-600">Swetha N</a>
           
-          {/* Mobile menu button */}
           <button 
             className="md:hidden text-gray-800 focus:outline-none"
             onClick={toggleMobileMenu}
@@ -81,7 +78,6 @@ const SwethaResume = () => {
             </svg>
           </button>
           
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <a href="#home" className="font-medium hover:text-indigo-600" onClick={() => scrollToSection('home')}>Home</a>
             <a href="#about" className="font-medium hover:text-indigo-600" onClick={() => scrollToSection('about')}>About</a>
@@ -92,7 +88,6 @@ const SwethaResume = () => {
           </nav>
         </div>
         
-        {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-white py-4 px-6 shadow-lg">
             <nav className="flex flex-col space-y-4">
@@ -107,7 +102,6 @@ const SwethaResume = () => {
         )}
       </header>
 
-      {/* Hero Section */}
       <section id="home" className="pt-32 pb-20 bg-gradient-to-r from-indigo-50 to-emerald-50">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center">
@@ -139,12 +133,7 @@ const SwethaResume = () => {
                 >
                   Contact Me
                 </button>
-                {/* <button 
-                  onClick={() => scrollToSection('experience')}
-                  className="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg font-medium transition duration-300"
-                >
-                  View Work
-                </button> */}
+            
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
@@ -163,7 +152,6 @@ const SwethaResume = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 relative">
@@ -249,10 +237,8 @@ const SwethaResume = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
  
 
-      {/* Experience Section */}
       <section id="experience" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 relative">
@@ -261,14 +247,10 @@ const SwethaResume = () => {
           </h2>
           
           <div className="relative">
-            {/* Timeline line */}
             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 transform -translate-x-1/2"></div>
             
-            {/* Timeline items */}
             <div className="space-y-8 md:space-y-16">
-              {/* Timeline Item 1 */}
               <div className="relative md:flex">
-                {/* Dot */}
                 <div className="hidden md:block absolute left-1/2 top-8 w-4 h-4 bg-indigo-600 rounded-full transform -translate-x-1/2"></div>
                 
                 <div className="md:w-1/2 md:pr-8 md:mb-0 mb-6">
@@ -302,9 +284,7 @@ const SwethaResume = () => {
                 </div>
               </div>
               
-              {/* Timeline Item 2 */}
               <div className="relative md:flex">
-                {/* Dot */}
                 <div className="hidden md:block absolute left-1/2 top-8 w-4 h-4 bg-indigo-600 rounded-full transform -translate-x-1/2"></div>
                 
                 <div className="md:w-1/2 md:pr-8 md:mb-0 mb-6">
@@ -338,9 +318,7 @@ const SwethaResume = () => {
                 </div>
               </div>
               
-              {/* Timeline Item 3 */}
               <div className="relative md:flex justify-center">
-                {/* Dot */}
                 <div className="hidden md:block absolute left-1/2 top-8 w-4 h-4 bg-indigo-600 rounded-full transform -translate-x-1/2"></div>
                 
                 <div className="md:w-1/2">
@@ -363,7 +341,6 @@ const SwethaResume = () => {
         </div>
       </section>
 
-      {/* Education Section */}
       <section id="education" className="py-20 bg-gradient-to-r from-emerald-50 to-amber-50">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 relative">
@@ -372,7 +349,6 @@ const SwethaResume = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Education Item 1 */}
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
               <h3 className="text-xl font-bold text-indigo-600 mb-2">Master of Information System Security</h3>
               <h4 className="text-lg font-semibold mb-1">University of the Cumberlands</h4>
@@ -382,7 +358,6 @@ const SwethaResume = () => {
               </p>
             </div>
             
-            {/* Education Item 2 */}
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
               <h3 className="text-xl font-bold text-indigo-600 mb-2">Bachelor's in Computer Science and Engineering</h3>
               <h4 className="text-lg font-semibold mb-1">JNTUH</h4>
@@ -395,7 +370,6 @@ const SwethaResume = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 relative">
@@ -404,13 +378,11 @@ const SwethaResume = () => {
           </h2>
           
           <div className="flex flex-col md:flex-row gap-10">
-            {/* Contact Info */}
             <div className="md:w-1/2 bg-gray-100 p-8 rounded-xl">
               <h3 className="text-2xl font-bold text-indigo-600 mb-6">Contact Information</h3>
               <p className="mb-8">Feel free to reach out to me for any questions or opportunities!</p>
               
               <div className="space-y-6">
-                {/* Contact Item 1 */}
                 <div className="flex items-start">
                   <div className="bg-indigo-100 p-3 rounded-full mr-4">
                     <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -423,7 +395,6 @@ const SwethaResume = () => {
                   </div>
                 </div>
                 
-                {/* Contact Item 2 */}
                 <div className="flex items-start">
                   <div className="bg-indigo-100 p-3 rounded-full mr-4">
                     <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -436,7 +407,6 @@ const SwethaResume = () => {
                   </div>
                 </div>
                 
-                {/* Contact Item 3 */}
                 <div className="flex items-start">
                   <div className="bg-indigo-100 p-3 rounded-full mr-4">
                     <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -452,7 +422,6 @@ const SwethaResume = () => {
               </div>
             </div>
             
-            {/* Contact Form */}
             <div className="md:w-1/2 bg-gray-100 p-8 rounded-xl">
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">
@@ -497,18 +466,14 @@ const SwethaResume = () => {
         </div>
       </section>
 
-      {/* Footer */}
-    {/* Footer */}
 <footer className="bg-gray-900 text-white py-12">
   <div className="container mx-auto px-6">
     <div className="flex flex-col md:flex-row justify-between items-center">
-      {/* Left side - Branding */}
       <div className="mb-6 md:mb-0">
         <a href="#" className="text-2xl font-bold text-indigo-400">Swetha N</a>
         <p className="mt-2 text-gray-400">Senior Web Developer</p>
       </div>
       
-      {/* Middle - Quick Links */}
       <div className="mb-6 md:mb-0">
         <h3 className="text-lg font-semibold mb-3 text-center md:text-left">Quick Links</h3>
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
@@ -550,7 +515,6 @@ const SwethaResume = () => {
         </div>
       </div>
       
-      {/* Right side - Social Links */}
       <div>
         <h3 className="text-lg font-semibold mb-3 text-center md:text-left">Connect With Me</h3>
         <div className="flex justify-center space-x-4">
@@ -592,7 +556,6 @@ const SwethaResume = () => {
       </div>
     </div>
     
-    {/* Bottom - Copyright */}
     <div className="border-t border-gray-800 mt-8 pt-8 text-center">
       <p className="text-gray-400">
         &copy; {new Date().getFullYear()} Swetha N. All rights reserved.
